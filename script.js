@@ -18,6 +18,8 @@ async function getData() {
 
             reader.onload = (event) => {
                 localStorage.setItem("background", event.target.result);
+                const date = new Date();
+                localStorage.setItem("timestamp", date.getTime());
                 document.body.style.background = "url(" + event.target.result + ")"; 
             }
 
@@ -34,7 +36,10 @@ async function getData() {
     }
 }
 
-if(localStorage.getItem("background") === null){
+
+const date2 = new Date();
+let timeNow = date2.getTime();
+if(localStorage.getItem("background") === null || timeNow - localStorage.getItem("timestamp") > 43200000){
     getData();
 }else{
     const cookieUrl = localStorage.getItem("background");

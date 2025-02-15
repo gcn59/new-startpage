@@ -9,7 +9,7 @@
 
 body{
     background-color: #121212;
-    background-size: contain;
+    background-size: cover;
     display: none;
 }
 
@@ -61,11 +61,5 @@ span{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
-
-.responsive-img {
-    width: 75px;
-    height: 75px;
-    object-fit: cover; /* Ensures the image covers the container without distortion */
 }
 
