@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji&display=swap');
+
+@font-face {
+    font-family: FiraSans;
+    src: url("FiraSans-Regular.otf") format("opentype");
+}
+
+
+
+body{
+    background-color: #121212;
+    background-size: contain;
+    display: none;
+}
+
+#shadow-right{
+    position: absolute;
+    text-align: right;
+    border-radius: 25%;
+    top: 50%;
+    right: 5%;
+    width: auto;
+    height: auto;
+    padding: 25px;
+    background-color: rgb(245,245,245,0.80);
+    box-shadow: 10px 10px 15px #121212;
+    transform: translateY(-50%);
+}
+
+h1{
+    font-family: FiraSans;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Optional: Add some space between the items */
+    align-items: stretch;
+}
+
+a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: FiraSans;
+    color: black;
+    /* remove link formatting */
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 25%;
+    height: 98px;
+}
+a:hover{
+    background-color: gray;
+}
+
+span{
+    font-family: "Noto Emoji", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.responsive-img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
