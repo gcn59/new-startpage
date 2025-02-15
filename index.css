@@ -38,6 +38,13 @@ h1{
     align-items: stretch;
 }
 
+.img-container{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+}
+
 a{
     display: flex;
     flex-direction: column;
@@ -63,3 +70,9 @@ span{
     font-style: normal;
 }
 
+img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
